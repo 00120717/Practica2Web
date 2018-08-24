@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curriculum</title>
+</head>
+<body>
+    <form>
+    <section>
+
+    <h1 align="center">Curriculum Vitae</h1>
+
+    <article>
+        <fieldset>
+            <legend>Personal Data</legend>
+            
+            <label for="DUI">DUI</label>
+            <input type="text" name="DUI" id="DUI" placeholder="12345678-9" required pattern="[0-9]{8}-[0-9]{1}">
+
+            <label for="FirstName">First Name</label>
+            <input type="text" name="FirstName" id="FirstName" placeholder="First Name" required>
+
+            <label for="LastName">Last Name</label>
+            <input type="text" name="LastName" id="LastName" placeholder="Last Name" required>
+
+            <label for="Gender">Gender</label>
+            <input type="radio"  name="Gender" id="Gender">M
+            <input type="radio" name="Gender" id="Gender">F <br>
+
+            <label for="Contact">Contact Number</label>
+            <input type="num" name="Contact" id="Contact" required pattern="[0-9]{4}-[0-9]{4}">
+
+            <label for="Birthday">Birthday</label>
+            <input type="date" name="Birthday" id="Birthday" required>
+
+            <label for="Civilstatus">Civil Status</label>
+            <select name="Civilstatus" id="Civilstatus" required>
+                <option> Single</option>
+                <option> Merried</option>
+                <option> Other</option>
+            </select>
+
+            <label for="img">Image</label>
+            <input type="file" name="img" id="img">
+
+        </fieldset>
+    </article>
+
+    <article>
+        <fieldset>
+            <legend> Work Experience</legend>
+            <textarea name="Experience" rows="10" cols="175">Experience</textarea>
+        </fieldset>
+    </article>
+
+    <article>
+        <fieldset>
+            <legend>Academic Training</legend>
+            <textarea name="Training" rows="10" cols="175">Academic Training</textarea>
+        </fieldset>
+    </article>
+
+    <article>
+        <fieldset>
+            <legend>Further Training</legend>
+            <fieldset>
+                <legend>Programing Languages</legend>
+                <input type="checkbox" name="check[]">Java
+                <input type="checkbox" name="check[]">C#
+                <input type="checkbox" name="check[]">C++
+                <input type="checkbox" name="check[]">Ruby
+            </fieldset>
+            <fieldset>
+                <legend>Web Technologies</legend>
+                <input type="checkbox" name="check2[]">HTML5
+                <input type="checkbox" name="check2[]">CSS/CSS3
+                <input type="checkbox" name="check2[]">Materialize Css
+                <input type="checkbox" name="check2[]">JavaScript
+                <input type="checkbox" name="check2[]">Node.js
+                <input type="checkbox" name="check2[]">Spring MVC
+            </fieldset>
+        </fieldset>
+    </article>
+
+<input type="submit" value="Send">
+<button>Cancel</button>
+</form>
+</section>
+</body>
+</html>
